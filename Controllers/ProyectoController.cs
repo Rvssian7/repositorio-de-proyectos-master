@@ -45,6 +45,13 @@ namespace repositorio.Controllers
         // GET: Proyecto/Create
         public IActionResult Create()
         {
+            #region ViewBag
+            ViewBag.Asignaturas = new SelectList(_context.Asignatura, "Código", "Nombre");
+            if (_context.Asignatura.Count() == 0)
+            {
+                ViewBag.ErrorNoHayAsignaturasRegistradas = "No hay asignaturas registradas";
+            }
+            #endregion
             return View();
         }
 
@@ -57,6 +64,14 @@ namespace repositorio.Controllers
         {
             if (ModelState.IsValid)
             {
+                #region ViewBag
+                ViewBag.Asignaturas = new SelectList(_context.Asignatura, "Código", "Nombre");
+                if (_context.Asignatura.Count() == 0)
+                {
+                    ViewBag.ErrorNoHayAsignaturasRegistradas = "No hay asignaturas registradas";
+                    return View(proyecto);
+                }
+                #endregion
                 _context.Add(proyecto);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

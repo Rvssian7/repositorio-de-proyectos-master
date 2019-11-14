@@ -151,6 +151,7 @@ namespace repositorio.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Código = table.Column<string>(nullable: true),
                     Nombre = table.Column<string>(nullable: true),
+                    IdAsignatura = table.Column<long>(nullable: false),
                     AsignaturaId = table.Column<long>(nullable: true),
                     DirectorId = table.Column<long>(nullable: true)
                 },
