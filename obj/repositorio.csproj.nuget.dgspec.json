@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rvssian\\Desktop\\repositorio-de-proyectos-master\\repositorio-de-proyectos-master\\repositorio.csproj": {}
+    "C:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\repositorio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rvssian\\Desktop\\repositorio-de-proyectos-master\\repositorio-de-proyectos-master\\repositorio.csproj": {
+    "C:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\repositorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rvssian\\Desktop\\repositorio-de-proyectos-master\\repositorio-de-proyectos-master\\repositorio.csproj",
+        "projectUniqueName": "C:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\repositorio.csproj",
         "projectName": "repositorio",
-        "projectPath": "C:\\Users\\Rvssian\\Desktop\\repositorio-de-proyectos-master\\repositorio-de-proyectos-master\\repositorio.csproj",
-        "packagesPath": "C:\\Users\\Rvssian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rvssian\\Desktop\\repositorio-de-proyectos-master\\repositorio-de-proyectos-master\\obj\\",
+        "projectPath": "C:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\repositorio.csproj",
+        "packagesPath": "C:\\Users\\Araos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Rvssian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Araos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +44,10 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.3.0, )"
+            },
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "target": "Package",
+              "version": "[2.9.7, )"
             },
             "Microsoft.CodeAnalysis.CSharp.Workspaces": {
               "target": "Package",
