@@ -292,3 +292,8 @@ c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyecto
 c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Calificador\Details.cshtml.g.cs
 c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Calificador\Edit.cshtml.g.cs
 c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Calificador\Index.cshtml.g.cs
+c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Proyecto\Create.cshtml.g.cs
+c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Proyecto\Delete.cshtml.g.cs
+c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Proyecto\Details.cshtml.g.cs
+c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Proyecto\Edit.cshtml.g.cs
+c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Proyecto\Index.cshtml.g.cs
