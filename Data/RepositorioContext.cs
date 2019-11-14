@@ -23,5 +23,7 @@ namespace Repositorio.Models
         public DbSet<Repositorio.Models.Administrador> Administrador { get; set; }
 
         public DbSet<Repositorio.Models.Asignatura> Asignatura { get; set; }
+
+        public DbSet<Repositorio.Models.Calificador> Calificador { get; set; }
     }
 }
