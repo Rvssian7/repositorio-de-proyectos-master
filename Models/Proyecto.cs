@@ -8,6 +8,8 @@ namespace Repositorio.Models
 
         public string Nombre { get; set; }
 
+        public long IdAsignatura { get; set; }
+
         public Asignatura Asignatura { get; set; }
 
         public ICollection<EstudianteProyecto> ProyectoEstudiantes { get; set; }
@@ -15,7 +17,7 @@ namespace Repositorio.Models
         public Director Director { get; set; }
 
         public ICollection<ProyectoCalificador> ProyectoCalificadores { get; set; }
-        
+
         public Proyecto()
         {
         }

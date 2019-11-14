@@ -212,6 +212,9 @@ namespace repositorio.Migrations
                     b.Property<long?>("DirectorId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<long>("IdAsignatura")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Nombre")
                         .HasColumnType("TEXT");
 
