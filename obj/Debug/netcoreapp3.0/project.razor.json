@@ -9043,7 +9043,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-        "Documentation": null,
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting elements containing attributes with URL expected values.\n            </summary>\n            <remarks>Resolves URLs starting with '~/' (relative to the application's 'webroot' setting) that are not\n            targeted by other <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" />s. Runs prior to other <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" />s to ensure\n            application-relative URLs are resolved.</remarks>\n        ",
         "TagOutputHint": null,
         "CaseSensitive": false,
         "TagMatchingRules": [
@@ -14359,8 +14359,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Criterio\\Edit.cshtml",
+      "TargetPath": "Views\\Criterio\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Proyecto\\Delete.cshtml",
       "TargetPath": "Views\\Proyecto\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Administrador\\Edit.cshtml",
+      "TargetPath": "Views\\Administrador\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14371,6 +14381,21 @@
     {
       "FilePath": "Views\\Proyecto\\Create.cshtml",
       "TargetPath": "Views\\Proyecto\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Administrador\\Details.cshtml",
+      "TargetPath": "Views\\Administrador\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Usuario\\Details.cshtml",
+      "TargetPath": "Views\\Usuario\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Criterio\\Details.cshtml",
+      "TargetPath": "Views\\Criterio\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14394,6 +14419,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Administrador\\Create.cshtml",
+      "TargetPath": "Views\\Administrador\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Asignaturas\\Delete.cshtml",
       "TargetPath": "Views\\Asignaturas\\Delete.cshtml",
       "FileKind": "mvc"
@@ -14401,6 +14431,11 @@
     {
       "FilePath": "Views\\Proyecto\\Index.cshtml",
       "TargetPath": "Views\\Proyecto\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Administrador\\Index.cshtml",
+      "TargetPath": "Views\\Administrador\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14419,13 +14454,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Usuario\\Edit.cshtml",
+      "TargetPath": "Views\\Usuario\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Calificador\\Edit.cshtml",
       "TargetPath": "Views\\Calificador\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Usuario\\Index.cshtml",
+      "TargetPath": "Views\\Usuario\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Calificador\\Index.cshtml",
       "TargetPath": "Views\\Calificador\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Criterio\\Create.cshtml",
+      "TargetPath": "Views\\Criterio\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14439,8 +14489,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Usuario\\Create.cshtml",
+      "TargetPath": "Views\\Usuario\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Criterio\\Delete.cshtml",
+      "TargetPath": "Views\\Criterio\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Administrador\\Delete.cshtml",
+      "TargetPath": "Views\\Administrador\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Criterio\\Index.cshtml",
+      "TargetPath": "Views\\Criterio\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14451,6 +14521,11 @@
     {
       "FilePath": "Views\\Calificador\\Delete.cshtml",
       "TargetPath": "Views\\Calificador\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Usuario\\Delete.cshtml",
+      "TargetPath": "Views\\Usuario\\Delete.cshtml",
       "FileKind": "mvc"
     }
   ],

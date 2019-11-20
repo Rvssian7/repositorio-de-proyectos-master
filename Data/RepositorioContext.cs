@@ -27,5 +27,9 @@ namespace Repositorio.Models
         public DbSet<Repositorio.Models.Calificador> Calificador { get; set; }
 
         public DbSet<Repositorio.Models.Proyecto> Proyecto { get; set; }
+
+        public DbSet<Repositorio.Models.Criterio> Criterio { get; set; }
+
+        public DbSet<Repositorio.Models.Usuario> Usuario { get; set; }
     }
 }
