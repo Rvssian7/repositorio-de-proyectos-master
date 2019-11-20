@@ -312,3 +312,8 @@ c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyecto
 c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Usuario\Details.cshtml.g.cs
 c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Usuario\Edit.cshtml.g.cs
 c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Usuario\Index.cshtml.g.cs
+c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Rúbrica\Create.cshtml.g.cs
+c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Rúbrica\Delete.cshtml.g.cs
+c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Rúbrica\Details.cshtml.g.cs
+c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Rúbrica\Edit.cshtml.g.cs
+c:\Users\Rvssian\Desktop\repositorio-de-proyectos-master\repositorio-de-proyectos-master\obj\Debug\netcoreapp3.0\Razor\Views\Rúbrica\Index.cshtml.g.cs

@@ -31,5 +31,7 @@ namespace Repositorio.Models
         public DbSet<Repositorio.Models.Criterio> Criterio { get; set; }
 
         public DbSet<Repositorio.Models.Usuario> Usuario { get; set; }
+
+        public DbSet<Repositorio.Models.Rúbrica> Rúbrica { get; set; }
     }
 }

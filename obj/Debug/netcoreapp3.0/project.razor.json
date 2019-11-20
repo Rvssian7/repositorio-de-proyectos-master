@@ -14389,6 +14389,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Rúbrica\\Delete.cshtml",
+      "TargetPath": "Views\\Rúbrica\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Usuario\\Details.cshtml",
       "TargetPath": "Views\\Usuario\\Details.cshtml",
       "FileKind": "mvc"
@@ -14396,6 +14401,11 @@
     {
       "FilePath": "Views\\Criterio\\Details.cshtml",
       "TargetPath": "Views\\Criterio\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Rúbrica\\Index.cshtml",
+      "TargetPath": "Views\\Rúbrica\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14449,6 +14459,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Rúbrica\\Create.cshtml",
+      "TargetPath": "Views\\Rúbrica\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14466,6 +14481,11 @@
     {
       "FilePath": "Views\\Usuario\\Index.cshtml",
       "TargetPath": "Views\\Usuario\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Rúbrica\\Details.cshtml",
+      "TargetPath": "Views\\Rúbrica\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14491,6 +14511,11 @@
     {
       "FilePath": "Views\\Usuario\\Create.cshtml",
       "TargetPath": "Views\\Usuario\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Rúbrica\\Edit.cshtml",
+      "TargetPath": "Views\\Rúbrica\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
