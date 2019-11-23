@@ -19,46 +19,6 @@ namespace repositorio.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Calificador",
-                columns: table => new
-                {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Identificación = table.Column<string>(nullable: true),
-                    Sexo = table.Column<int>(nullable: false),
-                    Edad = table.Column<int>(nullable: false),
-                    Nombres = table.Column<string>(nullable: true),
-                    PrimerApellido = table.Column<string>(nullable: true),
-                    SegundoApellido = table.Column<string>(nullable: true),
-                    CorreoElectrónico = table.Column<string>(nullable: true),
-                    Contraseña = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Calificador", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Director",
-                columns: table => new
-                {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Identificación = table.Column<string>(nullable: true),
-                    Sexo = table.Column<int>(nullable: false),
-                    Edad = table.Column<int>(nullable: false),
-                    Nombres = table.Column<string>(nullable: true),
-                    PrimerApellido = table.Column<string>(nullable: true),
-                    SegundoApellido = table.Column<string>(nullable: true),
-                    CorreoElectrónico = table.Column<string>(nullable: true),
-                    Contraseña = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Director", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Estudiante",
                 columns: table => new
                 {
@@ -74,6 +34,27 @@ namespace repositorio.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Estudiante", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Usuario",
+                columns: table => new
+                {
+                    Id = table.Column<long>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Identificación = table.Column<string>(nullable: true),
+                    Sexo = table.Column<int>(nullable: false),
+                    Edad = table.Column<int>(nullable: false),
+                    Nombres = table.Column<string>(nullable: true),
+                    PrimerApellido = table.Column<string>(nullable: true),
+                    SegundoApellido = table.Column<string>(nullable: true),
+                    CorreoElectrónico = table.Column<string>(nullable: true),
+                    Contraseña = table.Column<string>(nullable: true),
+                    Discriminator = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Usuario", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -110,15 +91,15 @@ namespace repositorio.Migrations
                 {
                     table.PrimaryKey("PK_Asignatura", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Asignatura_Calificador_CalificadorId",
+                        name: "FK_Asignatura_Usuario_CalificadorId",
                         column: x => x.CalificadorId,
-                        principalTable: "Calificador",
+                        principalTable: "Usuario",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Asignatura_Director_DirectorId",
+                        name: "FK_Asignatura_Usuario_DirectorId",
                         column: x => x.DirectorId,
-                        principalTable: "Director",
+                        principalTable: "Usuario",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -165,9 +146,9 @@ namespace repositorio.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Proyecto_Director_DirectorId",
+                        name: "FK_Proyecto_Usuario_DirectorId",
                         column: x => x.DirectorId,
-                        principalTable: "Director",
+                        principalTable: "Usuario",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -211,9 +192,9 @@ namespace repositorio.Migrations
                 {
                     table.PrimaryKey("PK_ProyectoCalificador", x => new { x.IdCalificador, x.IdProyecto });
                     table.ForeignKey(
-                        name: "FK_ProyectoCalificador_Calificador_CalificadorId",
+                        name: "FK_ProyectoCalificador_Usuario_CalificadorId",
                         column: x => x.CalificadorId,
-                        principalTable: "Calificador",
+                        principalTable: "Usuario",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -302,10 +283,7 @@ namespace repositorio.Migrations
                 name: "Asignatura");
 
             migrationBuilder.DropTable(
-                name: "Calificador");
-
-            migrationBuilder.DropTable(
-                name: "Director");
+                name: "Usuario");
         }
     }
 }
