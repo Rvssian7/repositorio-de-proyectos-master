@@ -9,8 +9,8 @@ using Repositorio.Models;
 namespace repositorio.Migrations
 {
     [DbContext(typeof(RepositorioContext))]
-    [Migration("20191123171011_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20191123175832_InitialCreation")]
+    partial class InitialCreation
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -139,6 +139,10 @@ namespace repositorio.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Código")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Descripción")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<long?>("DirectorId")

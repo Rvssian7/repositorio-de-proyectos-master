@@ -139,6 +139,10 @@ namespace repositorio.Migrations
                     b.Property<string>("Código")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Descripción")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<long?>("DirectorId")
                         .HasColumnType("INTEGER");
 

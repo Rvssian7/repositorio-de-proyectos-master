@@ -2,7 +2,7 @@
 
 namespace repositorio.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class InitialCreation : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -133,6 +133,7 @@ namespace repositorio.Migrations
                     Código = table.Column<string>(nullable: true),
                     Nombre = table.Column<string>(nullable: true),
                     IdAsignatura = table.Column<long>(nullable: false),
+                    Descripción = table.Column<string>(nullable: false),
                     AsignaturaId = table.Column<long>(nullable: true),
                     DirectorId = table.Column<long>(nullable: true)
                 },

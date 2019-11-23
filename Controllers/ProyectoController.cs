@@ -54,13 +54,13 @@ namespace repositorio.Controllers
             #endregion
             return View();
         }
-
+        
         // POST: Proyecto/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Código,Nombre,Id")] Proyecto proyecto)
+        public async Task<IActionResult> Create([Bind("Código,Nombre,Id,Descripción")] Proyecto proyecto)
         {
             if (ModelState.IsValid)
             {
