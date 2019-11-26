@@ -56,41 +56,6 @@ namespace repositorio.Migrations
                     b.ToTable("Asignatura");
                 });
 
-            modelBuilder.Entity("Repositorio.Models.Calificador", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Contraseña")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("CorreoElectrónico")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Edad")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Identificación")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nombres")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("PrimerApellido")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("SegundoApellido")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Sexo")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Calificador");
-                });
-
             modelBuilder.Entity("Repositorio.Models.Criterio", b =>
                 {
                     b.Property<long>("Id")
@@ -108,41 +73,6 @@ namespace repositorio.Migrations
                     b.HasIndex("RúbricaId");
 
                     b.ToTable("Criterio");
-                });
-
-            modelBuilder.Entity("Repositorio.Models.Director", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Contraseña")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("CorreoElectrónico")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Edad")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Identificación")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nombres")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("PrimerApellido")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("SegundoApellido")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Sexo")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Director");
                 });
 
             modelBuilder.Entity("Repositorio.Models.Estudiante", b =>
@@ -209,6 +139,10 @@ namespace repositorio.Migrations
                     b.Property<string>("Código")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Descripción")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<long?>("DirectorId")
                         .HasColumnType("INTEGER");
 
@@ -264,6 +198,61 @@ namespace repositorio.Migrations
                     b.HasIndex("AdministradorId");
 
                     b.ToTable("Rúbrica");
+                });
+
+            modelBuilder.Entity("Repositorio.Models.Usuario", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Contraseña")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CorreoElectrónico")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Edad")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Identificación")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nombres")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PrimerApellido")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SegundoApellido")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Sexo")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuario");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Usuario");
+                });
+
+            modelBuilder.Entity("Repositorio.Models.Calificador", b =>
+                {
+                    b.HasBaseType("Repositorio.Models.Usuario");
+
+                    b.HasDiscriminator().HasValue("Calificador");
+                });
+
+            modelBuilder.Entity("Repositorio.Models.Director", b =>
+                {
+                    b.HasBaseType("Repositorio.Models.Usuario");
+
+                    b.HasDiscriminator().HasValue("Director");
                 });
 
             modelBuilder.Entity("Repositorio.Models.Asignatura", b =>

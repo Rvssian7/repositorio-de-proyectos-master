@@ -1,3 +1,5 @@
+using System.ComponentModel;
+
 namespace Repositorio.Models
 {
     public class Persona : BaseEntity
@@ -10,8 +12,10 @@ namespace Repositorio.Models
 
         public string Nombres { get; set; }
 
+        [DisplayName("Primer apellido")]
         public string PrimerApellido { get; set; }
 
+        [DisplayName("Segundo apellido")]
         public string SegundoApellido { get; set; }
 
         public Persona() { }

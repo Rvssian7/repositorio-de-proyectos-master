@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Repositorio.Models
 {
@@ -9,6 +10,11 @@ namespace Repositorio.Models
         public string Nombre { get; set; }
 
         public long IdAsignatura { get; set; }
+
+        [Required(ErrorMessage = "Este campo es requerido")]
+        [MinLength(20, ErrorMessage = "La descripción es inválida")]
+        
+        public string Descripción { get; set; }
 
         public Asignatura Asignatura { get; set; }
 
