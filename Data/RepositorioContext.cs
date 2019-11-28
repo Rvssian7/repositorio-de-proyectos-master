@@ -2,12 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Repositorio.Models;
 
 namespace Repositorio.Models
 {
-    public class RepositorioContext : DbContext
+    public class RepositorioContext : IdentityDbContext
     {
         public RepositorioContext (DbContextOptions<RepositorioContext> options)
             : base(options)
@@ -33,5 +34,7 @@ namespace Repositorio.Models
         public DbSet<Repositorio.Models.Usuario> Usuario { get; set; }
 
         public DbSet<Repositorio.Models.Rúbrica> Rúbrica { get; set; }
+
+        public DbSet<Repositorio.Models.Director> Director { get; set; }
     }
 }

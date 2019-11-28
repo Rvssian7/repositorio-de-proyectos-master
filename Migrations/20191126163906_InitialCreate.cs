@@ -2,7 +2,7 @@
 
 namespace repositorio.Migrations
 {
-    public partial class InitialCreation : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -132,10 +132,11 @@ namespace repositorio.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Código = table.Column<string>(nullable: true),
                     Nombre = table.Column<string>(nullable: true),
-                    IdAsignatura = table.Column<long>(nullable: false),
                     Descripción = table.Column<string>(nullable: false),
                     AsignaturaId = table.Column<long>(nullable: true),
-                    DirectorId = table.Column<long>(nullable: true)
+                    DirectorId = table.Column<long>(nullable: true),
+                    Calificador1Id = table.Column<long>(nullable: true),
+                    Calificador2Id = table.Column<long>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -144,6 +145,18 @@ namespace repositorio.Migrations
                         name: "FK_Proyecto_Asignatura_AsignaturaId",
                         column: x => x.AsignaturaId,
                         principalTable: "Asignatura",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Proyecto_Usuario_Calificador1Id",
+                        column: x => x.Calificador1Id,
+                        principalTable: "Usuario",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Proyecto_Usuario_Calificador2Id",
+                        column: x => x.Calificador2Id,
+                        principalTable: "Usuario",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -235,6 +248,16 @@ namespace repositorio.Migrations
                 name: "IX_Proyecto_AsignaturaId",
                 table: "Proyecto",
                 column: "AsignaturaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Proyecto_Calificador1Id",
+                table: "Proyecto",
+                column: "Calificador1Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Proyecto_Calificador2Id",
+                table: "Proyecto",
+                column: "Calificador2Id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Proyecto_DirectorId",

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using Repositorio.Models;
 
 namespace repositorio.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ProyectoController : Controller
     {
         private readonly RepositorioContext _context;
@@ -33,6 +35,10 @@ namespace repositorio.Controllers
             }
 
             var proyecto = await _context.Proyecto
+                .Include(p => p.Asignatura)
+                .Include(p => p.Director)
+                .Include(p => p.Calificador1)
+                .Include(p => p.Calificador2)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (proyecto == null)
             {
@@ -51,6 +57,10 @@ namespace repositorio.Controllers
             {
                 ViewBag.ErrorNoHayAsignaturasRegistradas = "No hay asignaturas registradas";
             }
+            if (_context.Director.Count() == 0)
+            {
+                ViewBag.ErrorConDirector = "No hay directores registrados";
+            }
             #endregion
             return View();
         }
@@ -60,7 +70,7 @@ namespace repositorio.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Código,Nombre,Id,Descripción")] Proyecto proyecto)
+        public async Task<IActionResult> Create([Bind("Código,Nombre,Id,Descripción,IdAsignatura,IdDirector")] Proyecto proyecto)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +81,22 @@ namespace repositorio.Controllers
                     ViewBag.ErrorNoHayAsignaturasRegistradas = "No hay asignaturas registradas";
                     return View(proyecto);
                 }
+                if (_context.Director.Count() == 0)
+                {
+                    ViewBag.ErrorConDirector = "No hay directores registrados";
+                    return View(proyecto);
+                }
+                Asignatura a = _context.Asignatura.Where(a => a.Código == proyecto.IdAsignatura).FirstOrDefault();
+                Director d = _context.Director.Where(d => d.Identificación == proyecto.IdDirector).FirstOrDefault();
+                if (d == null)
+                {
+                    ViewBag.ErrorConDirector = "Este director no está registrado";
+                    return View(proyecto);
+                }
+                ViewBag.ErrorConDirector = d.NombreCompleto();
                 #endregion
+                proyecto.Asignatura = a;
+                proyecto.Director = d;
                 _context.Add(proyecto);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

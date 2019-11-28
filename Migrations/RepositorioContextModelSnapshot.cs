@@ -14,7 +14,7 @@ namespace repositorio.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.0.0");
+                .HasAnnotation("ProductVersion", "3.1.0-preview3.19554.8");
 
             modelBuilder.Entity("Repositorio.Models.Administrador", b =>
                 {
@@ -136,6 +136,12 @@ namespace repositorio.Migrations
                     b.Property<long?>("AsignaturaId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<long?>("Calificador1Id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<long?>("Calificador2Id")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Código")
                         .HasColumnType("TEXT");
 
@@ -146,15 +152,16 @@ namespace repositorio.Migrations
                     b.Property<long?>("DirectorId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<long>("IdAsignatura")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Nombre")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
                     b.HasIndex("AsignaturaId");
+
+                    b.HasIndex("Calificador1Id");
+
+                    b.HasIndex("Calificador2Id");
 
                     b.HasIndex("DirectorId");
 
@@ -290,6 +297,14 @@ namespace repositorio.Migrations
                         .WithMany("Proyectos")
                         .HasForeignKey("AsignaturaId");
 
+                    b.HasOne("Repositorio.Models.Calificador", "Calificador1")
+                        .WithMany()
+                        .HasForeignKey("Calificador1Id");
+
+                    b.HasOne("Repositorio.Models.Calificador", "Calificador2")
+                        .WithMany()
+                        .HasForeignKey("Calificador2Id");
+
                     b.HasOne("Repositorio.Models.Director", "Director")
                         .WithMany("Proyectos")
                         .HasForeignKey("DirectorId");
@@ -302,7 +317,7 @@ namespace repositorio.Migrations
                         .HasForeignKey("CalificadorId");
 
                     b.HasOne("Repositorio.Models.Proyecto", "Proyecto")
-                        .WithMany("ProyectoCalificadores")
+                        .WithMany()
                         .HasForeignKey("ProyectoId");
                 });
 

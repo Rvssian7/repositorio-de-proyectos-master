@@ -8,7 +8,6 @@ namespace Repositorio.Models
 
         public Director()
         {
-            Proyectos = new HashSet<Proyecto>();
         }
     }
 }

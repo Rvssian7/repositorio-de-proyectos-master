@@ -19,5 +19,10 @@ namespace Repositorio.Models
         public string SegundoApellido { get; set; }
 
         public Persona() { }
+
+        public string NombreCompleto()
+        {
+            return Nombres + " " + PrimerApellido + " " + SegundoApellido;
+        }
     }
 }

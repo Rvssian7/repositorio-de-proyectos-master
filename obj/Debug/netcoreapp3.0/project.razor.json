@@ -14354,8 +14354,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Administrador\\Delete.cshtml",
       "TargetPath": "Views\\Administrador\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Director\\Create.cshtml",
+      "TargetPath": "Views\\Director\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14366,6 +14381,11 @@
     {
       "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Calificador\\Edit.cshtml",
       "TargetPath": "Views\\Calificador\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\_ViewImports.cshtml",
+      "TargetPath": "_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14384,6 +14404,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Criterio\\Edit.cshtml",
       "TargetPath": "Views\\Criterio\\Edit.cshtml",
       "FileKind": "mvc"
@@ -14394,8 +14419,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Administrador\\Edit.cshtml",
       "TargetPath": "Views\\Administrador\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14419,6 +14459,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\_ViewStart.cshtml",
+      "TargetPath": "_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Rúbrica\\Details.cshtml",
       "TargetPath": "Views\\Rúbrica\\Details.cshtml",
       "FileKind": "mvc"
@@ -14426,6 +14471,16 @@
     {
       "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14464,6 +14519,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -14489,8 +14549,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\_CookieConsentPartial.cshtml",
+      "TargetPath": "_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Usuario\\Details.cshtml",
       "TargetPath": "Views\\Usuario\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Director\\Index.cshtml",
+      "TargetPath": "Views\\Director\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14519,6 +14589,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Director\\Details.cshtml",
+      "TargetPath": "Views\\Director\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Rúbrica\\Edit.cshtml",
       "TargetPath": "Views\\Rúbrica\\Edit.cshtml",
       "FileKind": "mvc"
@@ -14536,6 +14611,16 @@
     {
       "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Director\\Edit.cshtml",
+      "TargetPath": "Views\\Director\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Araos\\Documents\\GitHub\\repositorio-de-proyectos-master\\Views\\Director\\Delete.cshtml",
+      "TargetPath": "Views\\Director\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
